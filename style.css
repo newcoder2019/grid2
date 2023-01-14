@@ -1,0 +1,37 @@
+#grid {
+  display: grid;
+  grid-template-columns: 20em 1fr 1fr 10em;
+  grid-template-rows: 200px 1fr 3em;
+
+  grid-template-areas:
+    "header header header header"
+    "leftside content content rightside"
+    "leftside footer footer footer";
+}
+
+body {
+  margin: 0;
+  padding: 3em;
+}
+
+.masthead {
+  grid-area: header;
+  color: red;
+  font-weight: bold;
+  background-color: pink;
+  border: 1em solid red;
+  font-size: 3em;
+  justify-self: stetch;
+}
+.sidebar {
+  grid-area: leftside;
+}
+.main {
+  grid-area: content;
+}
+.navbar {
+  grid-area: rightside;
+}
+.footer {
+  grid-area: footer;
+}
