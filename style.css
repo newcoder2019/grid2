@@ -19,9 +19,12 @@ body {
   color: red;
   font-weight: bold;
   background-color: pink;
-  border: 1em solid red;
+  border: 3px solid red;
   font-size: 3em;
-  justify-self: stetch;
+}
+.item-a {
+  grid-column-start: 1;
+  grid-column-end: 5;
 }
 .sidebar {
   grid-area: leftside;
